@@ -1,0 +1,30 @@
+{% extends 'shop/main.html' %} <!-- Replace 'base.html' with your base template, if applicable -->
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row ">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4 px-4">
+
+            <h2>Logout Confirmation</h2>
+            <p>Are you sure you want to log out?</p>
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger px-5 rounded-pill">Logout</button>
+            </form>
+        </div>
+        <div class="col-lg-4">
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+{% endblock %}
